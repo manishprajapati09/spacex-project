@@ -567,3 +567,6 @@ function loadLaunchData()
 
     startCountdown("2027-01-01T00:00:00");
 }
+document.addEventListener("DOMContentLoaded", () => {
+    loadLaunchData();
+});
