@@ -552,9 +552,18 @@ topButton.addEventListener("click", () => {
    INITIALIZE
 ===================================================== */
 
-loadLaunchData();
+function loadLaunchData() 
+{
+    const launchName = document.getElementById("launch-name");
+    const launchDate = document.getElementById("launch-date");
 
-console.log(
-    "%cSPACEX PROJECT LOADED",
-    "color:white;background:black;padding:10px;font-size:14px"
-);
+    if (launchName) {
+        launchName.textContent = "Starship Mars Mission";
+    }
+
+    if (launchDate) {
+        launchDate.textContent = "January 1, 2027";
+    }
+
+    startCountdown("2027-01-01T00:00:00");
+}
