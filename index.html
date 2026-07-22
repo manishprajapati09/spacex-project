@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPACEX | Making Humanity Multi-Planetary</title>
+
+    <meta name="description" content="A SpaceX-inspired futuristic website built with HTML, CSS and JavaScript.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-logo">SPACEX</div>
+        <div class="loader-bar">
+            <span></span>
+        </div>
+    </div>
+
+    <!-- STARS -->
+    <div class="stars"></div>
+    <div class="stars stars-2"></div>
+    <div class="stars stars-3"></div>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                SPACEX
+            </a>
+
+            <nav class="nav" id="nav">
+                <a href="#missions">Missions</a>
+                <a href="#rockets">Rockets</a>
+                <a href="#timeline">Timeline</a>
+                <a href="#launch">Launch</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button id="menu-btn" class="menu-btn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="hero-subtitle">
+                ADVANCING THE FUTURE
+            </p>
+
+            <h1 class="hero-title">
+                MAKING HUMANITY
+                <br>
+                MULTI-PLANETARY
+            </h1>
+
+            <p class="hero-text">
+                Exploring reusable rockets, deep-space missions,
+                and the future of life beyond Earth.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#launch" class="btn btn-primary">
+                    View Launch
+                </a>
+
+                <a href="#rockets" class="btn btn-secondary">
+                    Explore Rockets
+                </a>
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+
+        <div class="container stats-grid">
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="450">0</h2>
+                <p>Total Launches</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="350">0</h2>
+                <p>Landings</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="99">0</h2>
+                <p>Success Rate %</p>
+            </div>
+
+            <div class="stat-card">
+                <h2 class="counter" data-target="8">0</h2>
+                <p>Active Programs</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MISSIONS -->
+    <section id="missions" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <p>MISSIONS</p>
+                <h2>Current Programs</h2>
+            </div>
+
+            <div class="mission-grid">
+
+                <article class="mission-card">
+                    <div class="mission-image mission-1"></div>
+
+                    <div class="mission-content">
+                        <h3>Starlink</h3>
+
+                        <p>
+                            Global broadband internet constellation
+                            designed to provide connectivity worldwide.
+                        </p>
+
+                        <a href="#">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mission-card">
+                    <div class="mission-image mission-2"></div>
+
+                    <div class="mission-content">
+                        <h3>Dragon</h3>
+
+                        <p>
+                            Human spaceflight vehicle delivering crews
+                            and cargo to orbit.
+                        </p>
+
+                        <a href="#">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+                <article class="mission-card">
+                    <div class="mission-image mission-3"></div>
+
+                    <div class="mission-content">
+                        <h3>Mars Program</h3>
+
+                        <p>
+                            Developing technologies to support
+                            sustainable human presence on Mars.
+                        </p>
+
+                        <a href="#">
+                            Learn More →
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ROCKETS -->
+    <section id="rockets" class="section dark-section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <p>ROCKET FLEET</p>
+                <h2>Engineering Excellence</h2>
+            </div>
+
+            <div class="rocket-grid">
+
+                <div class="rocket-card">
+
+                    <span class="rocket-number">
+                        01
+                    </span>
+
+                    <h3>
+                        Falcon 9
+                    </h3>
+
+                    <p>
+                        Reusable two-stage rocket designed for
+                        reliability and affordability.
+                    </p>
+
+                    <ul>
+                        <li>Reusable Booster</li>
+                        <li>Low Earth Orbit</li>
+                        <li>Commercial Payloads</li>
+                    </ul>
+
+                </div>
+
+                <div class="rocket-card">
+
+                    <span class="rocket-number">
+                        02
+                    </span>
+
+                    <h3>
+                        Falcon Heavy
+                    </h3>
+
+                    <p>
+                        One of the most powerful operational
+                        rockets in the world.
+                    </p>
+
+                    <ul>
+                        <li>Heavy Lift</li>
+                        <li>Deep Space Missions</li>
+                        <li>Triple Core Design</li>
+                    </ul>
+
+                </div>
+
+                <div class="rocket-card">
+
+                    <span class="rocket-number">
+                        03
+                    </span>
+
+                    <h3>
+                        Starship
+                    </h3>
+
+                    <p>
+                        Fully reusable transportation system
+                        designed for Moon and Mars missions.
+                    </p>
+
+                    <ul>
+                        <li>Mars Ready</li>
+                        <li>Rapid Reusability</li>
+                        <li>Next Generation Vehicle</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TIMELINE -->
+    <section id="timeline" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <p>HISTORY</p>
+                <h2>Mission Timeline</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <span>2002</span>
+                    <h3>Company Founded</h3>
+                    <p>Beginning the journey toward reusable spaceflight.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2008</span>
+                    <h3>Falcon 1 Success</h3>
+                    <p>First privately developed liquid-fueled rocket to orbit.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2015</span>
+                    <h3>Rocket Landing</h3>
+                    <p>Historic first orbital-class booster landing.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>2020</span>
+                    <h3>Crew Missions</h3>
+                    <p>Regular human transportation to orbit begins.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span>Future</span>
+                    <h3>Mars</h3>
+                    <p>Building a sustainable future beyond Earth.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- LIVE LAUNCH -->
+    <section id="launch" class="section dark-section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <p>LIVE DATA</p>
+                <h2>Upcoming Launch</h2>
+            </div>
+
+            <div class="launch-panel">
+
+                <h3 id="launch-name">
+                    Loading Mission...
+                </h3>
+
+                <p id="launch-date">
+                    Fetching launch date...
+                </p>
+
+                <div class="countdown">
+
+                    <div>
+                        <span id="days">00</span>
+                        <small>Days</small>
+                    </div>
+
+                    <div>
+                        <span id="hours">00</span>
+                        <small>Hours</small>
+                    </div>
+
+                    <div>
+                        <span id="minutes">00</span>
+                        <small>Minutes</small>
+                    </div>
+
+                    <div>
+                        <span id="seconds">00</span>
+                        <small>Seconds</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+        <div class="container">
+
+            <div class="section-header">
+                <p>CONTACT</p>
+                <h2>Mission Control</h2>
+            </div>
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-top">
+
+                <h3>
+                    SPACEX
+                </h3>
+
+                <p>
+                    Built as an educational project
+                    using HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 SpaceX Inspired Project.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
